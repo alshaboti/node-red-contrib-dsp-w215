@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    RED.nodes.registerType('dsp-w215',{
+        category: 'output',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            pin: {value:"0"},
+            ip: {value:"0"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "light.png",
+        label: function() {
+            return this.name||"DSP-W215";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="dsp-w215">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-pin"><i class="icon-tag"></i> PIN</label>
+        <input type="text" id="node-input-pin" placeholder="PIN">
+    </div>
+
+     </br>
+    <div class="form-row">
+        <label for="node-input-ip"><i class="icon-tag"></i> IP</label>
+        <input type="text" id="node-input-ip" placeholder="DSP-W215 IP address">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="dsp-w215">
+    <p> Simply turn DSP-W215 power plug on/off, expect msg.payload json with On as boolean value.</p>
+</script>

@@ -1,0 +1,31 @@
+{
+  "name": "node-red-contrib-dspw215",
+  "version": "1.0.0",
+  "description": "Simple control DSP-w215 power plug (ON/OFF) using hnap module. ",
+  "main": "index.js",
+  "dependencies":{
+    "hnap":"2.1.0"
+   },
+  "keywords": [
+    "node-red",
+    "DSP-w215",
+    "smart plug",
+    "Dlink"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Alshaboti",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alshaboti/node-red-contrib-dsp-w215.git"
+  },
+  "node-red":{
+    "nodes": {
+        "dsp-w215": "index.js"
+    }   
+  }
+}
+
+
